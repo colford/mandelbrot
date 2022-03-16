@@ -3,7 +3,6 @@
 # https://en.wikipedia.org/wiki/Mandelbrot_set
 ###############################################################################
 
-from tkinter import W
 import pygame
 
 from colour import Color
