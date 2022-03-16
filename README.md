@@ -1,0 +1,2 @@
+# mandelbrot
+Mandelbrot in pygame
