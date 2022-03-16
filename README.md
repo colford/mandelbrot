@@ -13,4 +13,5 @@ $ python3 -m pip install -r requirements.txt
 $ python3 ./mandelbrot.py
 ```
 You should see this...
+
 ![mandlebrot](https://user-images.githubusercontent.com/13421296/158689922-d32b45ec-6e2d-4309-b06a-9e7812a33330.PNG)
