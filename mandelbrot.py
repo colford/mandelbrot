@@ -24,7 +24,7 @@ COLOURS = [c.hex_l for c in R_W_COLOURS] + [c.hex_l for c in W_B_COLOURS]
 
 
 @jit(nopython=True)
-def normalise(x, maxx, minx, a, b):
+def normalise(x, minx, maxx, a, b):
     '''
     Scale number x between a and b
     '''
@@ -37,8 +37,8 @@ def colour(px: int, py: int) -> str:
     Return the escape iteration based upon the X,Y given normalised
     in to the mandelbrot set.
     '''
-    x0 = normalise(px, 0, WIDTH, 0.47, -2.00)
-    y0 = normalise(py, 0, HEIGHT, 1.12, -1.12)
+    x0 = normalise(px, 0, WIDTH, -2.00, 0.47)
+    y0 = normalise(py, 0, HEIGHT, -1.12, 1.12)
     x = 0
     y = 0
     iter = 0
